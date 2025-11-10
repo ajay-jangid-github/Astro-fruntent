@@ -46,7 +46,7 @@ const Footer = () => {
 
         requestAnimationFrame(smoothScroll);
     };
-    const phoneNumber = "9079001762";
+    const phoneNumber = "9414237095";
     const message = "Hello, I visited your site and want to know more!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
