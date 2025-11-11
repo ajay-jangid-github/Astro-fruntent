@@ -112,40 +112,126 @@ const Home = () => {
     const [loading, setLoading] = useState(false);
     const [testimonials, setTestimonials] = useState([]);
     const [active, setActive] = useState(null);
-    const [products, setProducts] = useState([]);
-    const [blogs, setBlogs] = useState([]);
-    const [photos, setPhotos] = useState([]);
+    const [products, setProducts] = useState([
+        {
+            _id: '1',
+            name: 'Rudraksha Mala',
+            price: 1500,
+            oldprice: 2000,
+            imageUrl: 'https://via.placeholder.com/300x300/8B4513/FFFFFF?text=Rudraksha'
+        },
+        {
+            _id: '2', 
+            name: 'Gemstone Ring',
+            price: 5000,
+            oldprice: 7000,
+            imageUrl: 'https://via.placeholder.com/300x300/FFD700/000000?text=Gemstone'
+        },
+        {
+            _id: '3',
+            name: 'Yantra Set', 
+            price: 2500,
+            oldprice: 3500,
+            imageUrl: 'https://via.placeholder.com/300x300/FF1493/FFFFFF?text=Yantra'
+        },
+        {
+            _id: '4',
+            name: 'Puja Kit',
+            price: 1200, 
+            oldprice: 1800,
+            imageUrl: 'https://via.placeholder.com/300x300/32CD32/FFFFFF?text=Puja+Kit'
+        }
+    ]);
+    const [blogs, setBlogs] = useState([
+        {
+            _id: '1',
+            name: 'Pandit Purshotam Gaur',
+            title: 'Understanding Your Birth Chart',
+            category: 'Astrology Basics',
+            description: 'Learn how to read and interpret your birth chart for better life insights.',
+            imageUrl: 'https://via.placeholder.com/400x300/FF6B35/FFFFFF?text=Birth+Chart',
+            createdAt: new Date().toISOString()
+        },
+        {
+            _id: '2',
+            name: 'Pandit Purshotam Gaur',
+            title: 'Planetary Remedies for Success', 
+            category: 'Remedies',
+            description: 'Discover powerful planetary remedies to overcome obstacles and achieve success.',
+            imageUrl: 'https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Remedies',
+            createdAt: new Date().toISOString()
+        }
+    ]);
+    const [photos, setPhotos] = useState([
+        {
+            _id: '1',
+            imageUrl: 'https://via.placeholder.com/400x300/FF6B35/FFFFFF?text=Gallery+1'
+        },
+        {
+            _id: '2', 
+            imageUrl: 'https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Gallery+2'
+        },
+        {
+            _id: '3',
+            imageUrl: 'https://via.placeholder.com/400x300/45B7D1/FFFFFF?text=Gallery+3'
+        },
+        {
+            _id: '4',
+            imageUrl: 'https://via.placeholder.com/400x300/96CEB4/FFFFFF?text=Gallery+4'
+        }
+    ]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const loadData = async () => {
             setIsLoading(true);
+            console.log('Starting to load data...');
+            console.log('Initial products count:', products.length);
+            console.log('Initial blogs count:', blogs.length);
+            console.log('Initial photos count:', photos.length);
             try {
-                // Set default data first
+                // Set testimonials data
                 setTestimonials(localTestimonials);
                 setActive(localTestimonials[0]);
                 
                 // Try to fetch API data with individual error handling
                 const apiCalls = [
-                    axios.get(API_ENDPOINTS.PRODUCT).catch(err => ({ data: [] })),
-                    axios.get(API_ENDPOINTS.BLOG).catch(err => ({ data: [] })),
-                    axios.get(API_ENDPOINTS.PHOTO).catch(err => ({ data: [] }))
+                    axios.get(API_ENDPOINTS.PRODUCT).catch(err => {
+                        console.log('Products API failed, using fallback data');
+                        return { data: null };
+                    }),
+                    axios.get(API_ENDPOINTS.BLOG).catch(err => {
+                        console.log('Blog API failed, using fallback data');
+                        return { data: null };
+                    }),
+                    axios.get(API_ENDPOINTS.PHOTO).catch(err => {
+                        console.log('Photos API failed, using fallback data');
+                        return { data: null };
+                    })
                 ];
                 
                 const [productsRes, blogsRes, photosRes] = await Promise.all(apiCalls);
                 
-                setProducts(Array.isArray(productsRes.data) ? productsRes.data.slice(0, 4) : []);
-                setBlogs(Array.isArray(blogsRes.data) ? blogsRes.data.slice(0, 2) : []);
-                setPhotos(Array.isArray(photosRes.data) ? photosRes.data.slice(0, 4) : []);
+                // Only update if API returned valid data
+                if (productsRes.data && Array.isArray(productsRes.data) && productsRes.data.length > 0) {
+                    setProducts(productsRes.data.slice(0, 4));
+                }
+                if (blogsRes.data && Array.isArray(blogsRes.data) && blogsRes.data.length > 0) {
+                    setBlogs(blogsRes.data.slice(0, 2));
+                }
+                if (photosRes.data && Array.isArray(photosRes.data) && photosRes.data.length > 0) {
+                    setPhotos(photosRes.data.slice(0, 4));
+                }
                 
             } catch (error) {
                 console.error("Error loading data:", error);
-                // Set empty arrays as fallback
-                setProducts([]);
-                setBlogs([]);
-                setPhotos([]);
+                // Fallback data is already set in useState, so no need to do anything
             } finally {
                 setIsLoading(false);
+                console.log('Data loading completed');
+                console.log('Final products count:', products.length);
+                console.log('Final blogs count:', blogs.length); 
+                console.log('Final photos count:', photos.length);
             }
         };
 

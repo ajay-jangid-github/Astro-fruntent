@@ -11,7 +11,18 @@ import { API_ENDPOINTS } from '../../config/api'
 
 const Footer = () => {
     const [visible, setVisible] = useState(false);
-    const [recentPosts, setRecentPosts] = useState([]);
+    const [recentPosts, setRecentPosts] = useState([
+        {
+            _id: '1',
+            title: 'Understanding Your Birth Chart',
+            imageUrl: 'https://via.placeholder.com/60x48/FF6B35/FFFFFF?text=Blog1'
+        },
+        {
+            _id: '2', 
+            title: 'Planetary Remedies for Success',
+            imageUrl: 'https://via.placeholder.com/60x48/4ECDC4/FFFFFF?text=Blog2'
+        }
+    ]);
 
     useEffect(() => {
         const handleScroll = () => setVisible(window.scrollY > 200);
@@ -25,10 +36,12 @@ const Footer = () => {
             try {
                 const response = await axios.get(API_ENDPOINTS.BLOG);
                 console.log('Blog response:', response.data);
-                setRecentPosts(Array.isArray(response.data) ? response.data.slice(0, 2) : []);
+                if (Array.isArray(response.data) && response.data.length > 0) {
+                    setRecentPosts(response.data.slice(0, 2));
+                }
             } catch (error) {
                 console.error('Error fetching recent posts:', error);
-                setRecentPosts([]);
+                // Keep fallback data, don't clear it
             }
         };
         fetchRecentPosts();
