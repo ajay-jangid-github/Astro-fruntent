@@ -14,7 +14,7 @@ const AdminKundlis = () => {
     const token = localStorage.getItem('token');
     return token ? { Authorization: `Bearer ${token}` } : {};
   };
-
+ 
   const fetchKundlis = async () => {
     try {
       setLoading(true);
