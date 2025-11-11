@@ -129,6 +129,9 @@ const KundliPopup = () => {
                                                 value={formData.dateOfBirth}
                                                 onChange={handleChange}
                                                 required
+                                                style={{
+                                                    colorScheme: "dark", // 👈 icon white ho jayega
+                                                }}
                                                 className="w-full bg-transparent border border-gray-600 rounded-md px-4 py-3 text-gray-300 focus:ring-2 focus:ring-yellow-500"
                                             />
                                             <input
@@ -137,6 +140,9 @@ const KundliPopup = () => {
                                                 value={formData.timeOfBirth}
                                                 onChange={handleChange}
                                                 required
+                                                style={{
+                                                    colorScheme: "dark", // 👈 icon white ho jayega
+                                                }}
                                                 className="w-full bg-transparent border border-gray-600 rounded-md px-4 py-3 text-gray-300 focus:ring-2 focus:ring-yellow-500"
                                             />
                                         </div>

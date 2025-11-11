@@ -253,8 +253,8 @@ const Home = () => {
                     initial={{ scale: 1.3, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className='md:flex-row-reverse md:flex overflow-hidden pt-30 pb-30 right-[-100]' style={{ backgroundImage: `url(${bgbannere})`, backgroundPosition:`right-[-100px]`}}>
-                    <div className="relative md:w-[50%] min-h-[380px] text-white flex flex-col items-center justify-center">
+                    className='md:flex-row-reverse md:flex overflow-hidden pt-30 pb-30 right-[-100]' style={{ backgroundImage: `url(${bgbannere})`, backgroundPosition:`Right` }}>
+                    <div className="relative md:w-[55%] min-h-[380px] text-white flex flex-col items-center justify-center">
                         <div
                             className="absolute inset-0 bg-cover bg-center animate-[spin_10s_linear_infinite] bg-no-repeat z-0"
                             style={{
@@ -266,7 +266,7 @@ const Home = () => {
                         ></div>
 
                         <video
-                            className="w-[50%] rounded-2xl shadow-lg relative z-10 h-auto"
+                            className="w-[45%] rounded-2xl shadow-lg relative z-10 h-auto"
                             controls
                             autoPlay
                             muted
@@ -285,7 +285,7 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='md:w-[50%]'>
+                    <div className='md:w-[45%]'>
                         <Swiper
                             spaceBetween={30}
                             centeredSlides={true}
@@ -498,6 +498,9 @@ const Home = () => {
                                     value={formData.dateOfBirth}
                                     onChange={handleChange}
                                     required
+                                    style={{
+                                        colorScheme: "dark", // 👈 icon white ho jayega
+                                    }}
                                     className="w-full bg-transparent border border-gray-600 rounded-md px-4 py-3 text-gray-300 focus:ring-2 focus:ring-yellow-500"
                                 />
                                 <input
@@ -506,6 +509,9 @@ const Home = () => {
                                     value={formData.timeOfBirth}
                                     onChange={handleChange}
                                     required
+                                    style={{
+                                        colorScheme: "dark", // 👈 icon white ho jayega
+                                    }}
                                     className="w-full bg-transparent border border-gray-600 rounded-md px-4 py-3 text-gray-300 focus:ring-2 focus:ring-yellow-500"
                                 />
                             </div>
@@ -726,8 +732,8 @@ const Home = () => {
                 </div>
                 <div className='pt-20 pb-20 px-10 md:flex justify-between'>
                     <div className='md:w-[15%] m-auto my-10 md:my-0 w-[50%]'>
-                        <div className='bg-no-repeat w=[200px] h-=[300px]'>
-                            <img src={bgstarimg} className='object-cover w-40 h-40 rounded-full' alt="" />
+                        <div className='bg-no-repeat w=[200px] h-=[300px] '>
+                            <img src={bgstarimg} className='object-cover m-auto justify-center w-40 h-40 rounded-full' alt="" />
                         </div>
                         <p className='text-sm text-center font-bold text-white mt-5 hover:text-yellow-700 duration-300'>
                             Decades of Astrological Experience
@@ -736,7 +742,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-[15%] m-auto my-10 md:my-0 w-[50%]'>
                         <div className='bg-no-repeat w=[200px] h-=[300px]'>
-                            <img src={bgstarimg2} className='object-cover w-40 h-40 rounded-full' alt="" />
+                            <img src={bgstarimg2} className='object-cover m-auto w-40 h-40 rounded-full' alt="" />
                         </div>
                         <p className='text-sm text-center font-bold text-white mt-5 hover:text-yellow-700 duration-300'>
                             Government-Recognized & Gold Medalist Astrologer
@@ -745,7 +751,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-[15%] m-auto my-10 md:my-0 w-[50%]'>
                         <div className='bg-no-repeat w=[200px] h-=[300px]' >
-                            <img src={bgstarimg3} className='object-cover w-40 h-40 rounded-full' alt="" />
+                            <img src={bgstarimg3} className='object-cover m-auto w-40 h-40 rounded-full' alt="" />
                         </div>
                         <p className='text-sm text-center font-bold text-white mt-5 hover:text-yellow-700 duration-300'>
                             Personalized & Practical Remedies
@@ -754,7 +760,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-[15%] m-auto my-10 md:my-0 w-[50%]'>
                         <div className='bg-no-repeat w=[200px] h-=[300px]'>
-                            <img src={bgstarimg4} className='object-cover w-40 h-40 rounded-full' alt="" />
+                            <img src={bgstarimg4} className='object-cover m-auto w-40 h-40 rounded-full' alt="" />
                         </div>
                         <p className='text-sm text-center font-bold text-white mt-5 hover:text-yellow-700 duration-300'>
                             Thousands of Satisfied Devotees Worldwide
@@ -763,7 +769,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-[15%] m-auto my-10 md:my-0 w-[50%]'>
                         <div className='bg-no-repeat w=[200px] h-=[300px]'>
-                            <img src={bgstarimg5} className='object-cover w-40 h-40 rounded-full' alt="" />
+                            <img src={bgstarimg5} className='object-cover m-auto w-40 h-40 rounded-full' alt="" />
                         </div>
                         <p className='text-sm text-center font-bold text-white mt-5 hover:text-yellow-700 duration-300'>
                             Trusted Name in Vedic Astrology
@@ -906,7 +912,7 @@ const Home = () => {
                             <span className="absolute top-3 z-40 left-3 bg-orange-400 text-white text-xs font-semibold px-2 py-1 rounded">
                                 New
                             </span>
-                            
+
                             <div className="flex justify-center items-center relative">
                                 <motion.img
                                     src={product.imageUrl || ringImg}
@@ -915,7 +921,7 @@ const Home = () => {
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ duration: 0.3 }}
                                 />
-                                
+
                                 <motion.div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center gap-3 transition-opacity duration-500">
                                     <button
                                         onClick={() => handleAddToCart(product)}
@@ -923,13 +929,13 @@ const Home = () => {
                                     >
                                         <FaShoppingCart /> Add To Cart
                                     </button>
-                                    
+
                                     <div className="flex gap-3 text-white text-lg">
-                                     
+
                                     </div>
                                 </motion.div>
                             </div>
-                            
+
                             <div className="text-center my-5">
                                 <div className="flex justify-center mb-1">
                                     {[...Array(5)].map((_, i) =>
@@ -940,7 +946,7 @@ const Home = () => {
                                         )
                                     )}
                                 </div>
-                                
+
                                 <h3 className="font-semibold text-gray-800">{product.name}</h3>
                                 <div className="mt-1">
                                     <span className="text-lg font-bold text-black">₹{product.price}</span>
@@ -1008,21 +1014,21 @@ const Home = () => {
                                 </div>
 
                                 <h1 className="text-lg font-semibold text-gray-800 duration-300 group-hover:text-orange-500">
-                                  {blog.title}
+                                    {blog.title}
                                 </h1>
 
                                 <p className="text-gray-600 mt-3 text-sm grow">
-                                   {blog.category}
+                                    {blog.category}
                                 </p>
                                 <p className="text-gray-600 mt-3 text-sm grow">
-                                   {blog.description}
+                                    {blog.description}
                                 </p>
                             </div>
                         </div>
                     ))}
 
-                    
-                
+
+
                 </motion.div>
 
                 <div className="text-center">
@@ -1062,7 +1068,7 @@ const Home = () => {
                             <img
                                 src={photo.imageUrl || gallery1}
                                 alt={photo.title || 'Gallery Image'}
-                                className='rounded-xl object-cover duration-500 hover:scale-110 shadow-lg w-full h-[200px]'
+                                className='rounded-xl duration-500 hover:scale-110 shadow-lg w-full h-[200px] md:w-[300px] md:h-70 object-contain'
                             />
                         </div>
                     ))}

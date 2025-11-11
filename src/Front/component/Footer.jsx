@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import footerbg from "../../Front/assest/imgs/footer-bg.jpg"
+import bgbannere from "../../Front/assest/imgs/bg-bannere.jpg"
 import logo from '../../Front/assest/imgs/logo.webp';
 import { FaLocationDot } from 'react-icons/fa6'
 import { IoCall, IoCallOutline } from 'react-icons/io5'
@@ -54,8 +54,8 @@ const Footer = () => {
         <>
 
             <div className='fixed bottom-20 z-50 right-10'>
-                <Link to={url}><FaWhatsapp size={50} className='bg-green-600 p-1 rounded-xl text-white animate-bounce' /></Link>
-                <Link className='flex items-center gap-2.5 animate-bounce text-2xl' to={`tel:${phoneNumber}`}><IoCallOutline size={50} className='bg-green-600 p-1 rounded-xl text-white mt-5 ' /> Call ?</Link>
+                <Link to={url} className='bg-green-600 py-2 px-3 rounded-xl text-white mt-5 flex text-xl items-center animate-bounce gap-1'><FaWhatsapp size={30} />Message</Link>
+                <Link className='flex items-center gap-1 animate-bounce text-xl bg-green-600 py-2 px-3 rounded-xl text-white mt-5' to={`tel:${phoneNumber}`}><IoCallOutline size={30}/> Call</Link>
             </div>
             {visible && (
                 <button
@@ -65,7 +65,7 @@ const Footer = () => {
                     <FaArrowUp /> Top
                 </button>
             )}
-            <footer className="relative px-10 py-10 text-white bg-cover bg-center" style={{ backgroundImage: `url(${footerbg})` }} >
+            <footer className="relative px-10 py-10 text-white bg-cover bg-center" style={{ backgroundImage: `url(${bgbannere})` }} >
                 <div className="absolute inset-0 bg-black/70"></div>
                 <div className="relative z-10 flex flex-wrap justify-between">
                     <div className="w-full my-2 md:w-[30%] mb-6 md:mb-0">
