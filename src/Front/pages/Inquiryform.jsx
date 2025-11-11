@@ -33,7 +33,7 @@ const Inquiryform = () => {
     setFeedback({ type: "", message: "" });
 
     try {
-      const res = await axios.post("https://astrologyb.onrender.com/api/contact", formData);
+      const res = await axios.post("https://astrology-8oek.onrender.com/api/contact", formData);
       setFeedback({ type: "success", message: res.data.message });
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {

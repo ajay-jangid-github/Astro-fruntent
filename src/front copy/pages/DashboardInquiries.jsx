@@ -13,7 +13,7 @@ const DashboardInquiries = () => {
   const fetchInquiries = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('https://astrologyb.onrender.com/api/contact', {
+      const response = await axios.get('https://astrology-8oek.onrender.com/api/contact', {
         headers: { Authorization: `Bearer ${token}` }
       });
       const contactsData = response.data.contacts || response.data;
@@ -36,7 +36,7 @@ const DashboardInquiries = () => {
     
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`https://astrologyb.onrender.com/api/contact/${id}`, {
+      await axios.delete(`https://astrology-8oek.onrender.com/api/contact/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       

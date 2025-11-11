@@ -18,7 +18,7 @@ const AdminKundlis = () => {
   const fetchKundlis = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get('https://astrologyb.onrender.com/api/kundli', {
+      const { data } = await axios.get('https://astrology-8oek.onrender.com/api/kundli', {
         headers: getAuthHeaders(),
       });
       setKundlis(data.data);

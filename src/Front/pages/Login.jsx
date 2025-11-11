@@ -19,7 +19,7 @@ const Login = () => {
     setLoading(true);
     setError("");
     try {
-      const res = await axios.post("https://astrologyb.onrender.com/api/auth/login", formData);
+      const res = await axios.post("https://astrology-8oek.onrender.com/api/auth/login", formData);
       if (res.data.token) {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("user", JSON.stringify(res.data.user));

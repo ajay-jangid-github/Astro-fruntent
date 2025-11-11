@@ -19,8 +19,8 @@ const UserDashboardHome = () => {
       const headers = { Authorization: `Bearer ${token}` };
       
       const [ordersRes, kundlisRes] = await Promise.all([
-        axios.get('https://astrologyb.onrender.com/api/orders', { headers }),
-        axios.get('https://astrologyb.onrender.com/api/kundli', { headers })
+        axios.get('https://astrology-8oek.onrender.com/api/orders', { headers }),
+        axios.get('https://astrology-8oek.onrender.com/api/kundli', { headers })
       ]);
       
       const ordersData = ordersRes.data?.orders || ordersRes.data || [];

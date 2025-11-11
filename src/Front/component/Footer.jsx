@@ -7,6 +7,7 @@ import { IoIosSend, IoMdMail } from 'react-icons/io'
 import { FaArrowUp, FaWhatsapp } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { API_ENDPOINTS } from '../../config/api'
 
 const Footer = () => {
     const [visible, setVisible] = useState(false);
@@ -22,9 +23,9 @@ const Footer = () => {
         // Fetch recent blog posts
         const fetchRecentPosts = async () => {
             try {
-                const response = await axios.get('https://astrologyb.onrender.com/api/blog');
+                const response = await axios.get(API_ENDPOINTS.BLOG);
                 console.log('Blog response:', response.data);
-                setRecentPosts(response.data.slice(0, 2)); // Get latest 2 posts
+                setRecentPosts(Array.isArray(response.data) ? response.data.slice(0, 2) : []);
             } catch (error) {
                 console.error('Error fetching recent posts:', error);
                 setRecentPosts([]);
@@ -36,7 +37,7 @@ const Footer = () => {
     //     // Fetch recent blog posts
     //     const fetchRecentPosts = async () => {
     //         try {
-    //             const response = await axios.get('https://astrologyb.onrender.com/api/blog');
+    //             const response = await axios.get('https://astrology-8oek.onrender.com/api/blog');
     //             console.log('Blog response:', response.data);
     //             setRecentPosts(response.data.slice(0, 2)); // Get latest 2 posts
     //         } catch (error) {

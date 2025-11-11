@@ -19,7 +19,7 @@ const DashboardOverview = () => {
 
   const fetchStats = async () => {
     try {
-      const { data } = await axios.get('https://astrologyb.onrender.com/api/admin/stats', {
+      const { data } = await axios.get('https://astrology-8oek.onrender.com/api/admin/stats', {
         headers: getAuthHeaders()
       });
       setStats(data.stats);
@@ -28,8 +28,8 @@ const DashboardOverview = () => {
       // Fallback to basic API calls
       try {
         const [productsRes, blogsRes] = await Promise.all([
-          axios.get('https://astrologyb.onrender.com/api/product'),
-          axios.get('https://astrologyb.onrender.com/api/blog')
+          axios.get('https://astrology-8oek.onrender.com/api/product'),
+          axios.get('https://astrology-8oek.onrender.com/api/blog')
         ]);
         setStats({
           users: 0,

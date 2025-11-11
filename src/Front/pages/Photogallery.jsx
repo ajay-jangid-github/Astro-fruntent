@@ -23,7 +23,7 @@ const Photogallery = () => {
     const fetchPhotos = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("https://astrologyb.onrender.com/api/photo");
+        const res = await axios.get("https://astrology-8oek.onrender.com/api/photo");
         setPhotos(res.data);
         setError("");
       } catch (err) {

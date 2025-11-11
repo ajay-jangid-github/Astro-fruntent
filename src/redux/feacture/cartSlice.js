@@ -15,7 +15,7 @@ const initialState = {
 // ✅ Fetch cart from backend
 export const fetchCart = createAsyncThunk("cart/fetchCart", async (_, { rejectWithValue }) => {
   try {
-    const { data } = await axios.get("https://astrologyb.onrender.com/api/cart", {
+    const { data } = await axios.get("https://astrology-8oek.onrender.com/api/cart", {
       headers: { Authorization: `Bearer ${token}` },
     });
     localStorage.setItem("cartItems", JSON.stringify(data.items));
@@ -29,7 +29,7 @@ export const fetchCart = createAsyncThunk("cart/fetchCart", async (_, { rejectWi
 export const addToCart = createAsyncThunk("cart/addToCart", async (product, { rejectWithValue }) => {
   try {
     const { data } = await axios.post(
-      "https://astrologyb.onrender.com/api/cart/add",
+      "https://astrology-8oek.onrender.com/api/cart/add",
       { productId: product._id, quantity: 1 },
       { headers: { Authorization: `Bearer ${token}` } }
     );
@@ -43,7 +43,7 @@ export const addToCart = createAsyncThunk("cart/addToCart", async (product, { re
 // ✅ Remove item
 export const removeFromCart = createAsyncThunk("cart/removeFromCart", async (productId, { rejectWithValue }) => {
   try {
-    const { data } = await axios.delete(`https://astrologyb.onrender.com/api/cart/${productId}`, {
+    const { data } = await axios.delete(`https://astrology-8oek.onrender.com/api/cart/${productId}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     localStorage.setItem("cartItems", JSON.stringify(data.items));

@@ -39,7 +39,7 @@ const Blogfrom = () => {
         return;
       }
       
-      await axios.post('https://astrologyb.onrender.com/api/blog', formDataToSend, {
+      await axios.post('https://astrology-8oek.onrender.com/api/blog', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`

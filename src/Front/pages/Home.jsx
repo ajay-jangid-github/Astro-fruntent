@@ -53,6 +53,7 @@ import { IoIosShuffle } from 'react-icons/io';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useCart } from "../../context/CartContext";
+import { API_ENDPOINTS } from '../../config/api';
 
 const localTestimonials = [
     {
@@ -120,26 +121,29 @@ const Home = () => {
         const loadData = async () => {
             setIsLoading(true);
             try {
-                // Add error handling for each API call
-                const [productsRes, blogsRes, photosRes] = await Promise.all([
-                    axios.get('https://astrologyb.onrender.com/api/product'),
-                    axios.get('https://astrologyb.onrender.com/api/blog'),
-                    axios.get('https://astrologyb.onrender.com/api/photo')
-                ]);
-
+                // Set default data first
                 setTestimonials(localTestimonials);
                 setActive(localTestimonials[0]);
-                setProducts(productsRes.data.slice(0, 4));
-                setBlogs(blogsRes.data.slice(0, 2));
-                setPhotos(photosRes.data.slice(0, 4));
+                
+                // Try to fetch API data with individual error handling
+                const apiCalls = [
+                    axios.get(API_ENDPOINTS.PRODUCT).catch(err => ({ data: [] })),
+                    axios.get(API_ENDPOINTS.BLOG).catch(err => ({ data: [] })),
+                    axios.get(API_ENDPOINTS.PHOTO).catch(err => ({ data: [] }))
+                ];
+                
+                const [productsRes, blogsRes, photosRes] = await Promise.all(apiCalls);
+                
+                setProducts(Array.isArray(productsRes.data) ? productsRes.data.slice(0, 4) : []);
+                setBlogs(Array.isArray(blogsRes.data) ? blogsRes.data.slice(0, 2) : []);
+                setPhotos(Array.isArray(photosRes.data) ? photosRes.data.slice(0, 4) : []);
+                
             } catch (error) {
                 console.error("Error loading data:", error);
-                // Add user feedback for errors
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Failed to load data. Please try again later.',
-                });
+                // Set empty arrays as fallback
+                setProducts([]);
+                setBlogs([]);
+                setPhotos([]);
             } finally {
                 setIsLoading(false);
             }
