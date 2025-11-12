@@ -21,6 +21,7 @@ import Pressimg14 from "../../Front/assest/imgs/press14.jpeg";
 import Pressimg17 from "../../Front/assest/imgs/press17.jpeg";
 import Pressimg18 from "../../Front/assest/imgs/press18.jpeg";
 import Pressimg19 from "../../Front/assest/imgs/press19.jpeg";
+import img20 from "../../Front/assest/imgs/img20.jpeg";
 
 const Press = () => {
  const pressData = [
@@ -148,6 +149,13 @@ const Press = () => {
     id: 19,
     img: Pressimg,
     date: "AUG 12, 2024",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "Pandit Purshotam Sharma (Gaur) kehte hain ki Simha Rashi ke grah aatmavishwas aur netrutva gunon ko majboot karte hain.",
+  },
+   {
+    id: 20,
+    img: img20,
+    date: "AUG 12, 2025",
     title: "Leo Season Boosts Confidence and Leadership",
     desc: "Pandit Purshotam Sharma (Gaur) kehte hain ki Simha Rashi ke grah aatmavishwas aur netrutva gunon ko majboot karte hain.",
   },
