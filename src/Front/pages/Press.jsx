@@ -22,16 +22,16 @@ import Pressimg17 from "../../Front/assest/imgs/press17.jpeg";
 import Pressimg18 from "../../Front/assest/imgs/press18.jpeg";
 import Pressimg19 from "../../Front/assest/imgs/press19.jpeg";
 import img20 from "../../Front/assest/imgs/img20.jpeg";
-import img20 from "../../Front/assest/imgs/img20.jpeg";
 import img21 from "../../Front/assest/imgs/img21.jpeg";
 import img22 from "../../Front/assest/imgs/img22.jpeg";
 import img23 from "../../Front/assest/imgs/img23.jpeg";
 import img24 from "../../Front/assest/imgs/img24.jpeg";
 import img25 from "../../Front/assest/imgs/img25.jpeg";
-import img26 from "../../Front/assest/imgs/img27.jpeg";
-import img28 from "../../Front/assest/imgs/img28.jpeg";
+import img26 from "../../Front/assest/imgs/img26.jpeg";
+import img27 from "../../Front/assest/imgs/img27.jpeg"; 
+import img28 from "../../Front/assest/imgs/img28.jpeg"; 
 import img29 from "../../Front/assest/imgs/img29.jpeg";
-import img30 from "../../Front/assest/imgs/img30.jpeg";
+import img30 from "../../Front/assest/imgs/img30.jpeg"; 
 
 
 const Press = () => {
