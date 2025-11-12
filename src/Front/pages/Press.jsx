@@ -155,7 +155,7 @@ const Press = () => {
    {
     id: 20,
     img: img20,
-    date: "AUG 12, 2025",
+    date: "Nov 12, 2025",
     title: "Leo Season Boosts Confidence and Leadership",
     desc: "Pandit Purshotam Sharma (Gaur) kehte hain ki Simha Rashi ke grah aatmavishwas aur netrutva gunon ko majboot karte hain.",
   },
