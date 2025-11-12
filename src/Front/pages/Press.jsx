@@ -22,6 +22,17 @@ import Pressimg17 from "../../Front/assest/imgs/press17.jpeg";
 import Pressimg18 from "../../Front/assest/imgs/press18.jpeg";
 import Pressimg19 from "../../Front/assest/imgs/press19.jpeg";
 import img20 from "../../Front/assest/imgs/img20.jpeg";
+import img20 from "../../Front/assest/imgs/img20.jpeg";
+import img21 from "../../Front/assest/imgs/img21.jpeg";
+import img22 from "../../Front/assest/imgs/img22.jpeg";
+import img23 from "../../Front/assest/imgs/img23.jpeg";
+import img24 from "../../Front/assest/imgs/img24.jpeg";
+import img25 from "../../Front/assest/imgs/img25.jpeg";
+import img26 from "../../Front/assest/imgs/img27.jpeg";
+import img28 from "../../Front/assest/imgs/img28.jpeg";
+import img29 from "../../Front/assest/imgs/img29.jpeg";
+import img30 from "../../Front/assest/imgs/img30.jpeg";
+
 
 const Press = () => {
  const pressData = [
@@ -158,6 +169,77 @@ const Press = () => {
     date: "Nov 12, 2025",
     title: "Leo Season Boosts Confidence and Leadership",
     desc: "Pandit Purshotam Sharma (Gaur) kehte hain ki Simha Rashi ke grah aatmavishwas aur netrutva gunon ko majboot karte hain.",
+  },
+  
+  {
+    id: 21,
+    img: img21,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "Pandit Purshotam Sharma (Gaur) kehte hain ki Simha Rashi ke grah aatmavishwas aur netrutva gunon ko majboot karte hain.",
+  },
+    {
+    id: 22,
+    img: img22,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 23,
+    img: img23,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+     {
+    id: 24,
+    img: img24,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+     {
+    id: 25,
+    img: img25,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 26,
+    img: img26,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 27,
+    img: img27,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 28,
+    img: img28,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 29,
+    img: img29,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 30,
+    img: img30,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
   },
   
 ];
