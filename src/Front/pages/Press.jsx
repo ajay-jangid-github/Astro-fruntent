@@ -32,6 +32,55 @@ import img27 from "../../Front/assest/imgs/img27.jpeg";
 import img28 from "../../Front/assest/imgs/img28.jpeg"; 
 import img29 from "../../Front/assest/imgs/img29.jpeg";
 import img30 from "../../Front/assest/imgs/img30.jpeg"; 
+import img31 from "../../Front/assest/imgs/img31.jpeg";
+import img32 from "../../Front/assest/imgs/img32.jpeg";
+import img33 from "../../Front/assest/imgs/img33.jpeg";
+import img34 from "../../Front/assest/imgs/img34.jpeg";
+import img35 from "../../Front/assest/imgs/img35.jpeg";
+import img36 from "../../Front/assest/imgs/img36.jpeg";
+import img37 from "../../Front/assest/imgs/img37.jpeg";
+import img38 from "../../Front/assest/imgs/img38.jpeg";
+import img39 from "../../Front/assest/imgs/img39.jpeg";
+import img40 from "../../Front/assest/imgs/img40.jpeg";
+import img41 from "../../Front/assest/imgs/img41.jpeg";
+import img42 from "../../Front/assest/imgs/img42.jpeg";
+import img43 from "../../Front/assest/imgs/img43.jpeg";
+import img44 from "../../Front/assest/imgs/img44.jpeg";
+import img45 from "../../Front/assest/imgs/img45.jpeg";
+import img46 from "../../Front/assest/imgs/img46.jpeg";
+import img47 from "../../Front/assest/imgs/img47.jpeg";
+import img48 from "../../Front/assest/imgs/img48.jpeg";
+import img49 from "../../Front/assest/imgs/img49.jpeg";
+import img50 from "../../Front/assest/imgs/img50.jpeg";
+import img51 from "../../Front/assest/imgs/img51.jpeg";
+import img52 from "../../Front/assest/imgs/img52.jpeg";
+import img53 from "../../Front/assest/imgs/img53.jpeg";
+import img54 from "../../Front/assest/imgs/img54.jpeg";
+import img55 from "../../Front/assest/imgs/img55.jpeg";
+import img56 from "../../Front/assest/imgs/img56.jpeg";
+import img57 from "../../Front/assest/imgs/img57.jpeg";
+import img58 from "../../Front/assest/imgs/img58.jpeg";
+import img59 from "../../Front/assest/imgs/img59.jpeg";
+import img60 from "../../Front/assest/imgs/img60.jpeg";
+import img61 from "../../Front/assest/imgs/img61.jpeg";
+import img62 from "../../Front/assest/imgs/img62.jpeg";
+import img63 from "../../Front/assest/imgs/img63.jpeg";
+import img64 from "../../Front/assest/imgs/img64.jpeg";
+import img65 from "../../Front/assest/imgs/img65.jpeg";
+import img66 from "../../Front/assest/imgs/img66.jpeg";
+import img67 from "../../Front/assest/imgs/img67.jpeg";
+import img68 from "../../Front/assest/imgs/img68.jpeg";
+import img69 from "../../Front/assest/imgs/img69.jpeg";
+import img70 from "../../Front/assest/imgs/img70.jpeg";
+import img71 from "../../Front/assest/imgs/img71.jpeg";
+import img72 from "../../Front/assest/imgs/img72.jpeg";
+import img73 from "../../Front/assest/imgs/img73.jpeg";
+import img74 from "../../Front/assest/imgs/img74.jpeg";
+import img75 from "../../Front/assest/imgs/img75.jpeg";
+
+
+
+
 
 
 const Press = () => {
@@ -237,6 +286,342 @@ const Press = () => {
     {
     id: 30,
     img: img30,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 31,
+    img: img31,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 32,
+    img: img32,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 33,
+    img: img33,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+    {
+    id: 34,
+    img: img34,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 35,
+    img: img35,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 36,
+    img: img36,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 37,
+    img: img37,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 38,
+    img: img38,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 39,
+    img: img39,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 40,
+    img: img40,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 41,
+    img: img41,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 42,
+    img: img42,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 43,
+    img: img43,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 44,
+    img: img44,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 45,
+    img: img45,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 46,
+    img: img46,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 47,
+    img: img47,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 48,
+    img: img48,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 49,
+    img: img49,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 50,
+    img: img50,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 51,
+    img: img51,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 52,
+    img: img52,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+   {
+    id: 53,
+    img: img53,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 54,
+    img: img54,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 53,
+    img: img53,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 53,
+    img: img53,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 54,
+    img: img54,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 55,
+    img: img55,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 56,
+    img: img56,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 57,
+    img: img57,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 58,
+    img: img58,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 59,
+    img: img59,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 60,
+    img: img60,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 61,
+    img: img61,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 62,
+    img: img62,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 63,
+    img: img63,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 64,
+    img: img64,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 65,
+    img: img65,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 66,
+    img: img66,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 67,
+    img: img67,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 68,
+    img: img68,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 69,
+    img: img69,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 70,
+    img: img70,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 71,
+    img: img71,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 72,
+    img: img72,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 73,
+    img: img73,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 74,
+    img: img74,
+    date: "Nov 12, 2025",
+    title: "Leo Season Boosts Confidence and Leadership",
+    desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
+  },
+  {
+    id: 75,
+    img: img75,
     date: "Nov 12, 2025",
     title: "Leo Season Boosts Confidence and Leadership",
     desc: "ज्योतिषाचार्य पंडित पुरुषोत्तम गौड़ (गोल्ड मेडलिस्ट) के अनुसार, ग्रहों की स्थिति और उनका प्रभाव व्यक्ति के आत्मविश्वास, निर्णय क्षमता तथा जीवन के विभिन्न पहलुओं पर गहरा असर डालता है।"
