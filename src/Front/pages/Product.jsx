@@ -30,7 +30,7 @@ const Product = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("https://astrology-8oek.onrender.com/api/product");
+        const res = await axios.get("https://astrology-backend-1.onrender.com/api/product");
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products:", error);

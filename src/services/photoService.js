@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://astrology-8oek.onrender.com/api';
+const API_BASE_URL = 'https://astrology-backend-1.onrender.com/api';
 
 // Get auth token from localStorage
 const getAuthToken = () => {

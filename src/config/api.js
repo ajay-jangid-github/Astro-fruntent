@@ -1,5 +1,5 @@
 // API Configuration
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://astrology-8oek.onrender.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://astrology-backend-p4on.onrender.com';
 
 export const API_ENDPOINTS = {
   BLOG: `${API_BASE_URL}/api/blog`,

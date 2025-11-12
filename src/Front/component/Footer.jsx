@@ -15,12 +15,12 @@ const Footer = () => {
         {
             _id: '1',
             title: 'Understanding Your Birth Chart',
-            imageUrl: 'https://via.placeholder.com/60x48/FF6B35/FFFFFF?text=Blog1'
+            imageUrl: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA2MCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQ4IiBmaWxsPSIjRkY2QjM1Ii8+Cjx0ZXh0IHg9IjMwIiB5PSIyOCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmxvZzE8L3RleHQ+Cjwvc3ZnPgo='
         },
         {
             _id: '2', 
             title: 'Planetary Remedies for Success',
-            imageUrl: 'https://via.placeholder.com/60x48/4ECDC4/FFFFFF?text=Blog2'
+            imageUrl: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA2MCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQ4IiBmaWxsPSIjNEVDREMwIi8+Cjx0ZXh0IHg9IjMwIiB5PSIyOCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QmxvZzI8L3RleHQ+Cjwvc3ZnPgo='
         }
     ]);
 
@@ -50,7 +50,7 @@ const Footer = () => {
     //     // Fetch recent blog posts
     //     const fetchRecentPosts = async () => {
     //         try {
-    //             const response = await axios.get('https://astrology-8oek.onrender.com/api/blog');
+    //             const response = await axios.get('https://astrology-backend-1.onrender.com/api/blog');
     //             console.log('Blog response:', response.data);
     //             setRecentPosts(response.data.slice(0, 2)); // Get latest 2 posts
     //         } catch (error) {
@@ -128,7 +128,14 @@ const Footer = () => {
                             recentPosts.map((post) => (
                                 <Link key={post._id} to="/Blog" className='block mb-4 hover:text-yellow-600 transition duration-300'>
                                     {post.imageUrl && (
-                                        <img src={post.imageUrl} alt={post.title} className='w-15 h-12 object-cover rounded' />
+                                        <img 
+                                            src={post.imageUrl} 
+                                            alt={post.title} 
+                                            className='w-15 h-12 object-cover rounded'
+                                            onError={(e) => {
+                                                e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA2MCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjQ4IiBmaWxsPSIjNkI3Mjg0Ii8+Cjx0ZXh0IHg9IjMwIiB5PSIyOCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CbG9nPC90ZXh0Pgo8L3N2Zz4K';
+                                            }}
+                                        />
                                     )}
                                     <p className='text-sm py-2 cursor-pointer'>{post.title}</p>
                                 </Link>

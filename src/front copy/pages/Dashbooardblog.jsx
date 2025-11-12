@@ -17,7 +17,7 @@ const Dashbooardblog = () => {
 
     const fetchBlogs = async () => {
         try {
-            const { data } = await axios.get('https://astrology-8oek.onrender.com/api/blog');
+            const { data } = await axios.get('https://astrology-backend-1.onrender.com/api/blog');
             setBlogs(data);
         } catch (error) {
             console.error('Error fetching blogs:', error);
@@ -50,7 +50,7 @@ const Dashbooardblog = () => {
                 return;
             }
             
-            await axios.delete(`https://astrology-8oek.onrender.com/api/blog/${id}`, {
+            await axios.delete(`https://astrology-backend-1.onrender.com/api/blog/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

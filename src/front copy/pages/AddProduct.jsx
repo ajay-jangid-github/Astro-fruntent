@@ -39,7 +39,7 @@ const AddProduct = () => {
         return;
       }
       
-      await axios.post('https://astrology-8oek.onrender.com/api/product', formDataToSend, {
+      await axios.post('https://astrology-backend-1.onrender.com/api/product', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`

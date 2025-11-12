@@ -118,28 +118,28 @@ const Home = () => {
             name: 'Rudraksha Mala',
             price: 1500,
             oldprice: 2000,
-            imageUrl: 'https://via.placeholder.com/300x300/8B4513/FFFFFF?text=Rudraksha'
+            imageUrl: ringImg
         },
         {
             _id: '2', 
             name: 'Gemstone Ring',
             price: 5000,
             oldprice: 7000,
-            imageUrl: 'https://via.placeholder.com/300x300/FFD700/000000?text=Gemstone'
+            imageUrl: ringImg2
         },
         {
             _id: '3',
             name: 'Yantra Set', 
             price: 2500,
             oldprice: 3500,
-            imageUrl: 'https://via.placeholder.com/300x300/FF1493/FFFFFF?text=Yantra'
+            imageUrl: ringImg3
         },
         {
             _id: '4',
             name: 'Puja Kit',
             price: 1200, 
             oldprice: 1800,
-            imageUrl: 'https://via.placeholder.com/300x300/32CD32/FFFFFF?text=Puja+Kit'
+            imageUrl: ringImg4
         }
     ]);
     const [blogs, setBlogs] = useState([
@@ -149,7 +149,7 @@ const Home = () => {
             title: 'Understanding Your Birth Chart',
             category: 'Astrology Basics',
             description: 'Learn how to read and interpret your birth chart for better life insights.',
-            imageUrl: 'https://via.placeholder.com/400x300/FF6B35/FFFFFF?text=Birth+Chart',
+            imageUrl: blog4,
             createdAt: new Date().toISOString()
         },
         {
@@ -158,37 +158,32 @@ const Home = () => {
             title: 'Planetary Remedies for Success', 
             category: 'Remedies',
             description: 'Discover powerful planetary remedies to overcome obstacles and achieve success.',
-            imageUrl: 'https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Remedies',
+            imageUrl: blog5,
             createdAt: new Date().toISOString()
         }
     ]);
     const [photos, setPhotos] = useState([
         {
             _id: '1',
-            imageUrl: 'https://via.placeholder.com/400x300/FF6B35/FFFFFF?text=Gallery+1'
+            imageUrl: gallery1
         },
         {
             _id: '2', 
-            imageUrl: 'https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Gallery+2'
+            imageUrl: guruji
         },
         {
             _id: '3',
-            imageUrl: 'https://via.placeholder.com/400x300/45B7D1/FFFFFF?text=Gallery+3'
+            imageUrl: Kundliimg
         },
         {
             _id: '4',
-            imageUrl: 'https://via.placeholder.com/400x300/96CEB4/FFFFFF?text=Gallery+4'
+            imageUrl: blog4
         }
     ]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const loadData = async () => {
-            setIsLoading(true);
-            console.log('Starting to load data...');
-            console.log('Initial products count:', products.length);
-            console.log('Initial blogs count:', blogs.length);
-            console.log('Initial photos count:', photos.length);
             try {
                 // Set testimonials data
                 setTestimonials(localTestimonials);
@@ -225,13 +220,6 @@ const Home = () => {
                 
             } catch (error) {
                 console.error("Error loading data:", error);
-                // Fallback data is already set in useState, so no need to do anything
-            } finally {
-                setIsLoading(false);
-                console.log('Data loading completed');
-                console.log('Final products count:', products.length);
-                console.log('Final blogs count:', blogs.length); 
-                console.log('Final photos count:', photos.length);
             }
         };
 
@@ -288,11 +276,7 @@ const Home = () => {
         }
     };
 
-    if (isLoading) {
-        return <div className="flex justify-center items-center h-screen">Loading...</div>;
-    }
 
-    if (!testimonials.length) return null;
 
     const cardData = [
         {
@@ -989,7 +973,7 @@ const Home = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.2 }}
                     className='md:flex justify-between'>
-                    {products.map((product, i) => (
+                    {products && products.length > 0 ? products.map((product, i) => (
                         <motion.div
                             key={product._id}
                             className="group relative mt-10 bg-white shadow-md rounded-2xl overflow-hidden my-10 md:my-0 md:w-[23%] p-4 transition-all duration-500 hover:shadow-xl"
@@ -1046,7 +1030,11 @@ const Home = () => {
                                 </div>
                             </div>
                         </motion.div>
-                    ))}
+                    )) : (
+                        <div className="text-center w-full">
+                            <p>No products available</p>
+                        </div>
+                    )}
                 </motion.div>
                 <div className="text-center mt-16">
                     <Link
@@ -1153,7 +1141,7 @@ const Home = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.2 }}
                     className=' w-full px-10 my-10 justify-around md:flex'>
-                    {photos.map((photo) => (
+                    {photos && photos.length > 0 ? photos.map((photo) => (
                         <div key={photo._id} className='my-10 md:my-0 md:w-55'>
                             <img
                                 src={photo.imageUrl || gallery1}
@@ -1161,7 +1149,11 @@ const Home = () => {
                                 className='rounded-xl duration-500 hover:scale-110 shadow-lg w-full h-[200px] md:w-[300px] md:h-70 object-contain'
                             />
                         </div>
-                    ))}
+                    )) : (
+                        <div className="text-center w-full">
+                            <p>No photos available</p>
+                        </div>
+                    )}
                 </motion.div>
                 <div className="text-center">
                     <Link

@@ -1,12 +1,12 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { createContext, useContext, useState, useEffect } from "react";
+import axios from "axios";
 
 const CartContext = createContext();
 
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error('useCart must be used within a CartProvider');
+    throw new Error("useCart must be used within a CartProvider");
   }
   return context;
 };
@@ -16,8 +16,11 @@ export const CartProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  // ✅ Backend URL from .env
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const getAuthHeaders = () => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     return token ? { Authorization: `Bearer ${token}` } : {};
   };
 
@@ -25,20 +28,20 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       setError(null);
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem("token");
       if (!token) {
         setCartItems([]);
         return;
       }
-      
-      const { data } = await axios.get('https://astrology-8oek.onrender.com/api/cart', {
+
+      const { data } = await axios.get(`${API_URL}/api/cart`, {
         headers: getAuthHeaders(),
       });
       setCartItems(data.items || []);
-      localStorage.setItem('cartItems', JSON.stringify(data.items || []));
+      localStorage.setItem("cartItems", JSON.stringify(data.items || []));
     } catch (err) {
-      setError(err.response?.data?.msg || 'Error fetching cart');
-      const storedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+      setError(err.response?.data?.msg || "Error fetching cart");
+      const storedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
       setCartItems(storedCart);
     } finally {
       setLoading(false);
@@ -49,14 +52,14 @@ export const CartProvider = ({ children }) => {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        'https://astrology-8oek.onrender.com/api/cart/add',
+        `${API_URL}/api/cart/add`,
         { productId: product._id, quantity: 1 },
         { headers: getAuthHeaders() }
       );
       setCartItems(data.items);
-      localStorage.setItem('cartItems', JSON.stringify(data.items));
+      localStorage.setItem("cartItems", JSON.stringify(data.items));
     } catch (err) {
-      setError(err.response?.data?.msg || 'Error adding to cart');
+      setError(err.response?.data?.msg || "Error adding to cart");
     } finally {
       setLoading(false);
     }
@@ -65,13 +68,13 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = async (productId) => {
     try {
       setLoading(true);
-      const { data } = await axios.delete(`https://astrology-8oek.onrender.com/api/cart/remove/${productId}`, {
+      const { data } = await axios.delete(`${API_URL}/api/cart/remove/${productId}`, {
         headers: getAuthHeaders(),
       });
       setCartItems(data.items);
-      localStorage.setItem('cartItems', JSON.stringify(data.items));
+      localStorage.setItem("cartItems", JSON.stringify(data.items));
     } catch (err) {
-      setError(err.response?.data?.msg || 'Error removing item');
+      setError(err.response?.data?.msg || "Error removing item");
     } finally {
       setLoading(false);
     }
@@ -80,13 +83,13 @@ export const CartProvider = ({ children }) => {
   const clearCart = async () => {
     try {
       setLoading(true);
-      await axios.delete('https://astrology-8oek.onrender.com/api/cart/clear', {
+      await axios.delete(`${API_URL}/api/cart/clear`, {
         headers: getAuthHeaders(),
       });
       setCartItems([]);
-      localStorage.removeItem('cartItems');
+      localStorage.removeItem("cartItems");
     } catch (err) {
-      setError(err.response?.data?.msg || 'Error clearing cart');
+      setError(err.response?.data?.msg || "Error clearing cart");
     } finally {
       setLoading(false);
     }
@@ -101,11 +104,11 @@ export const CartProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     if (token) {
       fetchCart();
     } else {
-      const storedCart = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const storedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
       setCartItems(storedCart);
     }
   }, []);

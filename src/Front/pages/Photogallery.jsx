@@ -12,6 +12,8 @@ const Photogallery = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [newPhotoUrl, setNewPhotoUrl] = useState("");
+  const [isAdding, setIsAdding] = useState(false);
 
   const imagesPerPage = 8;
   const totalPages = Math.ceil(photos.length / imagesPerPage);
@@ -23,7 +25,7 @@ const Photogallery = () => {
     const fetchPhotos = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("https://astrology-8oek.onrender.com/api/photo");
+        const res = await axios.get("https://astrology-backend-p4on.onrender.com/api/photo");
         setPhotos(res.data);
         setError("");
       } catch (err) {
@@ -41,6 +43,35 @@ const Photogallery = () => {
   };
   const prevPage = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
+
+  // Add photo function
+  const addPhoto = async () => {
+    if (!newPhotoUrl.trim()) return;
+    try {
+      setIsAdding(true);
+      const res = await axios.post("https://astrology-backend-p4on.onrender.com/api/photo", {
+        imageUrl: newPhotoUrl
+      });
+      setPhotos([...photos, res.data]);
+      setNewPhotoUrl("");
+      setError("");
+    } catch (err) {
+      setError("Failed to add photo");
+    } finally {
+      setIsAdding(false);
+    }
+  };
+
+  // Delete photo function
+  const deletePhoto = async (photoId) => {
+    try {
+      await axios.delete(`https://astrology-backend-p4on.onrender.com/api/photo/${photoId}`);
+      setPhotos(photos.filter(photo => photo._id !== photoId));
+      setError("");
+    } catch (err) {
+      setError("Failed to delete photo");
+    }
   };
 
   return (
@@ -83,6 +114,27 @@ const Photogallery = () => {
           </p>
         </motion.div>
 
+        {/* --- ADD PHOTO SECTION --- */}
+        <div className="mb-8 p-4 bg-gray-100 rounded-lg">
+          <h3 className="text-lg font-semibold mb-3">Add New Photo</h3>
+          <div className="flex gap-3 justify-center items-center flex-wrap">
+            <input
+              type="url"
+              placeholder="Enter photo URL"
+              value={newPhotoUrl}
+              onChange={(e) => setNewPhotoUrl(e.target.value)}
+              className="px-3 py-2 border rounded-lg w-80"
+            />
+            <button
+              onClick={addPhoto}
+              disabled={isAdding || !newPhotoUrl.trim()}
+              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:bg-gray-400"
+            >
+              {isAdding ? "Adding..." : "Add Photo"}
+            </button>
+          </div>
+        </div>
+
         {/* --- LOADING / ERROR HANDLING --- */}
         {loading && <p className="text-gray-600 mt-5">Loading photos...</p>}
         {error && <p className="text-red-500 mt-5">{error}</p>}
@@ -97,13 +149,20 @@ const Photogallery = () => {
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="w-full flex justify-center"
+                  className="w-full flex justify-center relative group"
                 >
                   <img
                     src={photo.imageUrl}
                     alt={`gallery-${index}`}
                     className="rounded-xl duration-500 hover:scale-105 shadow-lg w-[250px] h-[180px] md:w-[300px] md:h-70 object-contain"
                   />
+                  <button
+                    onClick={() => deletePhoto(photo._id)}
+                    className="absolute top-2 right-2 bg-red-600 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-700"
+                    title="Delete Photo"
+                  >
+                    ✕
+                  </button>
                 </motion.div>
               ))}
             </div>

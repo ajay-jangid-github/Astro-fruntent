@@ -53,7 +53,7 @@ const KundliGenerate = () => {
       }
       
       const res = await axios.post(
-        "https://astrology-8oek.onrender.com/api/kundli/generate",
+        "https://astrology-backend-1.onrender.com/api/kundli/generate",
         {
           ...kundliData,
           paymentId

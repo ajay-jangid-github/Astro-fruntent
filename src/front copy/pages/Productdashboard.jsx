@@ -25,7 +25,7 @@ const Productdashboard = () => {
     
     const fetchProducts = async () => {
         try {
-            const { data } = await axios.get('https://astrology-8oek.onrender.com/api/product');
+            const { data } = await axios.get('https://astrology-backend-1.onrender.com/api/product');
             setProducts(data);
         } catch (error) {
             console.error('Error fetching products:', error);
@@ -62,7 +62,7 @@ const Productdashboard = () => {
                 return;
             }
             
-            await axios.delete(`https://astrology-8oek.onrender.com/api/product/${id}`, {
+            await axios.delete(`https://astrology-backend-1.onrender.com/api/product/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

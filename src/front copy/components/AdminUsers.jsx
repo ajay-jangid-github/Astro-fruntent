@@ -14,7 +14,7 @@ const AdminUsers = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('https://astrology-8oek.onrender.com//api/auth/users', {
+      const response = await axios.get('https://astrology-backend-1.onrender.com//api/auth/users', {
         headers: getAuthHeaders()
       });
       setUsers(response.data.users);

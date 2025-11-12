@@ -27,7 +27,7 @@ const KundliPayment = () => {
 
       // Create Razorpay order
       const orderResponse = await axios.post(
-        'https://astrology-8oek.onrender.com/api/payment/create-kundli-order',
+        'https://astrology-backend-1.onrender.com/api/payment/create-kundli-order',
         {
           amount: KUNDLI_PRICE,
           kundliData
@@ -64,7 +64,7 @@ const KundliPayment = () => {
           try {
             // Verify payment on server
             const verifyResponse = await axios.post(
-              'https://astrology-8oek.onrender.com/api/payment/verify-kundli-payment',
+              'https://astrology-backend-1.onrender.com/api/payment/verify-kundli-payment',
               {
                 razorpay_order_id: response.razorpay_order_id,
                 razorpay_payment_id: response.razorpay_payment_id,

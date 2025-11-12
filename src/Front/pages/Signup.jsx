@@ -17,7 +17,7 @@
 //     setLoading(true);
 //     setError("");
 //     try {
-//       const res = await axios.post("https://astrology-8oek.onrender.com/api/auth/register", formData);
+//       const res = await axios.post("https://astrology-backend-1.onrender.com/api/auth/register", formData);
 //       alert(res.data.msg || "Registered successfully!");
 //       navigate("/login");
 //     } catch (err) {
@@ -123,7 +123,7 @@ const Signup = () => {
     setError("");
 
     try {
-      const res = await axios.post("https://astrology-8oek.onrender.com/api/auth/register", formData);
+      const res = await axios.post("https://astrology-backend-1.onrender.com/api/auth/register", formData);
       alert(res.data.msg || "Registered successfully!");
       navigate("/login");
     } catch (err) {
